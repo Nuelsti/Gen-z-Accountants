@@ -1,0 +1,384 @@
+.Navbar__logo{ 
+    background-color: #0049FF; /* Deep Blue */
+    color: white;
+    padding: 3em 0;
+    text-align: center;
+    position: sticky;
+    /* top: 0; */
+    z-index: 1;
+    @media screen and (max-width: 1024px) {
+        padding: 1em 0;
+        /* width: 1024px; */
+        margin: 0;
+        
+    }
+}
+.dark-mode .Navbar__logo{
+    background-color: #333; /* Dark Grey */    
+}
+.fixed_Navbar{
+    /* position: fixed; */
+    /* top: 2%; */
+    width: 100%;
+    z-index: 100;
+}
+.nav_btn{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: white; */
+    padding-top: 15px;
+    /* z-index: 100%; */
+}
+.switch_btn{
+    position: relative;
+    margin-left: 10px;
+    @media screen and (max-width: 1024px) {
+        margin-left: 0;
+        
+    }
+}
+
+.Navbar_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;  
+}
+
+.logo__img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo p{
+  font-size: 26px;
+  font-weight: 600;
+  @media screen   and (max-width: 768px) {
+    font-size: 18px;    
+  }
+}
+.Navbar_link ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 1em 10em;
+    text-align: center;
+    width: 1600px;
+    margin: 0;
+    /* position: fixed; */
+    top: 100;
+    /* z-index: 1000; */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+#navlink a{
+    /* margin: 0 15px; */
+    color: #0049FF;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+#navlink a:hover{
+    color: #002244; 
+}
+.dark-mode #navlink a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.Navbar_link ul img{
+  cursor: pointer;
+}
+.dark-mode .Navbar_link ul img{
+  fill: aliceblue;
+  background-color: white;
+  border-radius: 50px;  
+}
+.Navbar_link .link{
+    color: white;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+/* hamburger */
+.hambuger{
+    display: none;
+}
+  
+.hamburger {
+    cursor: pointer;
+}
+  
+.hamburger input {
+    display: none;
+    padding: 0;
+}
+  
+.hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 3em;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.dark-mode .line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line {
+    fill: none;
+    stroke: #7c7a7a;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+.line_top_bottom {
+    stroke-dasharray: 12 63;
+}
+  
+.hamburger input:checked + svg {
+    transform: rotate(-45deg);
+    height: 1rem;
+    /* border: 1px solid #903AFF; */
+    border-radius: 50%;
+}
+  
+.hamburger input:checked + svg .line_top_bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+.Nav_link{
+  display: flex;
+  /* width: 100%; */
+  /* justify-content: space-around; */
+}
+
+@media screen  and (max-width: 1024px){
+#navlink a{
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    }
+    *{
+    max-width: 100%;
+    
+  }
+  .fixed_Navbar{
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    z-index: 1000;
+    padding: 0rem;
+  }
+  
+  .logo{
+    width: 100%;
+    /* background-color: #000; */
+  }
+  .Navbar_link{
+    display: flex;
+    justify-content: space-between;
+  
+    width: 100%;
+    /* background-color: #000; */
+  }
+  .hambuger{
+      display: block;
+      z-index: 20000;
+  }
+  .hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 3em;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* margin-top: -20%; */
+  }
+  .Nav_link{
+      display: block;
+  }
+  
+
+  .navbtn{
+  display: block;
+  margin-left: 50px;
+  }
+  .dark-mode #Nav_link{
+    width: 100%;
+    padding: 2rem 0rem;
+    text-align: left;
+    height: 100vh;
+    border: 0.5px solid rgba(61, 60, 65, 0.04);
+    /* background: linear-gradient(180deg, #4507ff27 0%, rgba(124, 124, 126, 0) 88.12%); */
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(30px) !important;
+    top: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    left: 0%;
+    position: absolute;
+    transform: translateX(-100%);
+  }
+  #Nav_link{
+      width: 100%;
+      padding: 2rem 0rem;
+      text-align: left;
+      height: 100vh;
+      border: 0.5px solid rgba(61, 60, 65, 0.04);
+      /* background: linear-gradient(180deg, #4507ff27 0%, rgba(124, 124, 126, 0) 88.12%); */
+      background-color: white;
+      backdrop-filter: blur(30px) !important;
+      top: 100%;
+      z-index: 1000;
+      overflow: hidden;
+      left: 0%;
+      position: absolute;
+      transform: translateX(-100%);
+  }
+  
+  .Nav_link.open{
+      transition: 0.5s ease-in-out;
+      display: block;
+      overflow: hidden;
+      transform: translateX(-100%);
+  }
+  #Nav_link.open{
+    transition: 0.5s ease-in-out;
+    display: block;
+    overflow: hidden;
+    transform: translateX(0%);
+    
+  }
+  
+  .hamburger input:checked + svg {
+    transform: rotate(-45deg);
+    height: 3rem;
+    /* border: 1px solid #903AFF; */
+    border-radius: 50%;
+  }
+  
+  .hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+  }
+  .dark-mode .logo{
+    background: none;
+  }
+  
+  .dark-mode .Navbar_link{
+    background: none;
+  }
+  }
+  
+  
+  @media screen  and (max-width:1024px){
+    *{
+      max-width: 100%;
+      
+    }
+
+  
+    .logo{
+        width: 100%;
+     }
+  
+    .nav_btn{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-left: 30px;
+    }
+  
+    .hambuger{
+        display: block;
+        z-index: 20000;
+    }
+    .hamburger svg {
+      /* The size of the SVG defines the overall size */
+      height: 3em;
+       
+      /* Define the transition for transforming the SVG */
+      transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    /* .Nav-link{
+        display: block;
+    } */
+
+.Navbar_link {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+     
+     /* padding: 2rem 10rem; */
+     padding-top: 3rem;
+     padding-bottom: 3rem;
+     padding-left: 5rem;
+     padding-right: 15rem;
+     flex-wrap: wrap;
+     text-decoration: none;
+  }
+  .navbtn{
+  display: block;
+  margin-left: 50px;
+  }
+  .dark-mode .Navbar_link{
+  background: none;
+  }
+  .Navbar_link ul{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  padding-top: 0rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 15rem;
+  flex-wrap: wrap;
+  text-decoration: none;
+  }
+    #Nav_link{
+        width: 100%;
+        padding: 5rem 0rem;
+        /* text-align: left; */
+        height: 100vh;
+        border: 0.5px solid rgba(255, 255, 255, 0.04);
+        background: white;
+        backdrop-filter: blur(7px) !important;
+        top: 100%;
+        z-index: 1000;
+        overflow: hidden;
+        left: 0%;
+        position: absolute;
+        transform: translateX(-100%);
+    }
+   
+    .Nav_link.open{
+        transition: 0.5s ease-in-out;
+        display: block;
+        /* overflow: hidden; */
+        transform: translateX(-100%);
+    }
+    #Nav_link.open{
+      transition: 0.5s ease-in-out;
+      display: block;
+      overflow: hidden;
+      transform: translateX(0%);
+      
+    }
+    
+  
+  }
