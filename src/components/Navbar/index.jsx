@@ -63,18 +63,9 @@ const Navbar = () => {
                             className="link">
                             Mission & Vision
                         </ScrollLink>
+
                         <ScrollLink 
-                            to="Fellowship" 
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}
-                            offset={-100}
-                            duration={1000} 
-                            className="link">
-                            Fellowship Structure
-                        </ScrollLink>
-                        <ScrollLink 
-                            to="Program" 
+                            to="Programs" 
                             activeClass="active"
                             spy={true}
                             smooth={true}
@@ -120,12 +111,6 @@ const Navbar = () => {
         </div>
 
         <div className="nav_btn">                                                            
-            {/* toggle button */}
-            {/* <div className="switch_btn">
-                <Switch toggleTheme ={toggleTheme}/>
-            </div>
-          */}
-
             {/* hamburger */}
             <div className="hambuger">
                 <label className={`hamburger ${open && `open`}`}>

@@ -4,21 +4,15 @@
     padding: 3em 0;
     text-align: center;
     position: sticky;
-    /* top: 0; */
-    z-index: 1;
+    top: 0;
+    z-index: 1000; 
     @media screen and (max-width: 1024px) {
         padding: 1em 0;
-        /* width: 1024px; */
-        margin: 0;
-        
+        margin: 0;   
     }
 }
-.dark-mode .Navbar__logo{
-    background-color: #333; /* Dark Grey */    
-}
+
 .fixed_Navbar{
-    /* position: fixed; */
-    /* top: 2%; */
     width: 100%;
     z-index: 100;
 }
@@ -30,21 +24,13 @@
     /* z-index: 100%; */
 }
 .switch_btn{
-    position: relative;
+    /* position: relative; */
     margin-left: 10px;
     @media screen and (max-width: 1024px) {
         margin-left: 0;
         
     }
 }
-
-.Navbar_flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;  
-}
-
 .logo__img{
     width: 100%; 
     height: 100%;
@@ -59,41 +45,31 @@
   }
 }
 .Navbar_link ul{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding: 1em 10em;
-    text-align: center;
-    width: 1600px;
-    margin: 0;
-    /* position: fixed; */
-    top: 100;
-    /* z-index: 1000; */
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 1em 0;
+  background: rgba(255, 255, 255, 0.85);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 #navlink a{
-    /* margin: 0 15px; */
-    color: #0049FF;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s;
-    cursor: pointer;
+  color: #0049FF;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+  cursor: pointer;
 }
 #navlink a:hover{
     color: #002244; 
 }
-.dark-mode #navlink a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
+
 .Navbar_link ul img{
   cursor: pointer;
 }
-.dark-mode .Navbar_link ul img{
-  fill: aliceblue;
-  background-color: white;
-  border-radius: 50px;  
-}
+
 .Navbar_link .link{
     color: white;
     font-size: 15px;
@@ -123,16 +99,7 @@
     /* Define the transition for transforming the SVG */
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.dark-mode .line {
-    fill: none;
-    stroke: white;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 3;
-    /* Define the transition for transforming the Stroke */
-    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .line {
     fill: none;
     stroke: #7c7a7a;
@@ -214,22 +181,7 @@
   display: block;
   margin-left: 50px;
   }
-  .dark-mode #Nav_link{
-    width: 100%;
-    padding: 2rem 0rem;
-    text-align: left;
-    height: 100vh;
-    border: 0.5px solid rgba(61, 60, 65, 0.04);
-    /* background: linear-gradient(180deg, #4507ff27 0%, rgba(124, 124, 126, 0) 88.12%); */
-    background-color: rgb(0, 0, 0);
-    backdrop-filter: blur(30px) !important;
-    top: 100%;
-    z-index: 1000;
-    overflow: hidden;
-    left: 0%;
-    position: absolute;
-    transform: translateX(-100%);
-  }
+
   #Nav_link{
       width: 100%;
       padding: 2rem 0rem;
@@ -272,13 +224,8 @@
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
   }
-  .dark-mode .logo{
-    background: none;
-  }
-  
-  .dark-mode .Navbar_link{
-    background: none;
-  }
+
+
   }
   
   
@@ -334,9 +281,7 @@
   display: block;
   margin-left: 50px;
   }
-  .dark-mode .Navbar_link{
-  background: none;
-  }
+
   .Navbar_link ul{
   display: flex;
   gap: 50px;

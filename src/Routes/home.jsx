@@ -4,8 +4,8 @@ import { useTheme } from './themeprovider'
 import Hero from '../components/Hero';
 import About from '../components/AboutUs';
 import MissionVision from '../components/MissionVision';
-import FellowshipStructure from '../components/FellowshipStructure';
-import Program from '../components/Programs';
+// import FellowshipStructure from '../components/FellowshipStructure';
+import Programs from '../components/Programs';
 
 const Home = () => {
     const { isDarkMode } = useTheme();
@@ -15,8 +15,8 @@ const Home = () => {
         <Hero />
         <About />
         <MissionVision />
-        <FellowshipStructure />
-        <Program />
+
+        <Programs />
         <div className='join-footer'>
         {/* <Footer/> */}
         </div>   

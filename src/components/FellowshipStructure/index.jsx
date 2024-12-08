@@ -7,6 +7,7 @@ function FellowshipStructure() {
             <div className="fellowship-structure__header">
                 <h2 className='fellowship-structure__header-content'>Fellowship Structure</h2>
             </div>
+            
         </div>
         
     )

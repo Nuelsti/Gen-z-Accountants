@@ -1,21 +1,67 @@
 import React from 'react'
 import './style.css'
 import { Display } from './display'
-import Icon1 from '../../../src/assets/img/compassicon.svg'
+// import Icon1 from '../../../src/assets/img/compassicon.svg'
+// import image1 from '../../assets/img/IMG_2256.jpg'
+import image1 from '../../assets/img/IMG_2318.jpg'
+import image2 from '../../assets/img/IMG_2285.jpg'
+import image3 from '../../assets/img/IMG_2256.jpg'
+import image04 from '../../assets/img/IMG_2345 (1).jpg'
+// import image4 from '../../assets/img/IMG_2345 (1).jpg'
+// import { PiX } from 'react-icons/pi'
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 function MissionVision() {
     const stylesArray = [
-        {background: "#DBE5FF", color: "#0049FF"},
-        {background: "#F5DBDB", color: "#B80000"},
-        {background: "#DBF2F1", color: "#00A69B"},
+        {
+            background: "#DBE5FF", 
+            color: "#ffff", 
+            fontWeight: '600',
+            // letterSpacing: '1px',
+            backgroundImage: `url(${image04})`, 
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            boxShadow: "inset 0px -150px 250px 5px rgb(1, 1, 18)",
+
+        },
+        {
+            background: "#DBE5FF", 
+            color: "#ffff", 
+            fontWeight: '600',
+            // letterSpacing: '1px',
+            backgroundImage: `url(${image2})`, 
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            boxShadow: "inset 0px -150px 250px 5px rgb(1, 1, 18)",
+
+        },
+        {
+            background: "#F5DBDB", 
+            color: "#ffff",
+            backgroundImage: `url(${image1})`, 
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            boxShadow: "inset 0px -150px 200px 5px  rgb(1, 1, 18)",
+            fontWeight: '600',
+            // letterSpacing: '1px',
+        },
+        {
+            background: "#DBF2F1", 
+            color: "#ffff",
+            backgroundImage: `url(${image3})`, 
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            boxShadow: "inset 0px -150px 200px 5px  rgb(1, 1, 18)",
+            fontWeight: '600',
+        },
     ]
 
     const style1 = stylesArray[0];
     const style2 = stylesArray[1];
     const style3 = stylesArray[2];
+    const style4 = stylesArray[3];
 
     return (
         <div className="mission__vision__main" id='Mission'>
@@ -49,7 +95,7 @@ function MissionVision() {
                         description="Creating a community where aspiring professionals thrive."                     />
                     
                     <Display                     
-                        style={style1}
+                        style={style4}
                         title="Building Inclusive Opportunities" 
                         description="Ensuring equal opportunities for diverse groups in finance careers." 
                     />

@@ -1,37 +1,96 @@
-import React from 'react'
+import React, {useState}from 'react'
 import './style.css'
-import ImageOne from '../../assets/img/IMG_2318.jpg'
-import ImageTwo from '../../assets/img/IMG_2285.jpg'
-import Bulletin from '../../assets/img/compassicon.svg'
+import Content from './content'
+import Icon1 from '../../assets/img/handshake.svg'
+import Icon2 from '../../assets/img/compassicon.svg'
+// 
+function Programs() {
 
-function Program() {
+    // const [activeIndex, setActiveIndex] = useState(null);
+
+    // const toggleLearnMore = (index) => {
+    //     setActiveIndex(activeIndex === index ? null : index);
+    // };
+
+    // const moreContent = [
+    //     { 
+    //         head: "What is VelmozaEats?", 
+    //         answer: " answer" 
+    //     },
+    //     { 
+    //         head: "Is Velmoza available in every state?", 
+    //         answer: " " 
+    //     },
+    //     { 
+    //         head: "How much can I make monthly?", 
+    //         answer: " " 
+    //     },
+    //     { 
+    //         head: "What do I need to get started?", 
+    //         answer: " " 
+    //     },
+
+    // ];
+        
     return (
-        <div className="program" id='Program'>
+        <div className="program-container" id='Programs'>
             <div className="program__header">
-                <h2 className='program__header__head'>Program</h2>
-                <div className="program__main__cont">
-                    <div className="program__content__text">
-                        <p className="program__sub__content">
-                            Our Career Peering Program guides students through a structured 6-year journey:
-                        </p>
-                        <ul className="content-cont">
-                            <li>  <img src={Bulletin} alt='icon-bulleting' className='bulletin'/> <strong>Year 1: </strong> Onboarding and Introduction to Finance.</li>
-                            <li><img src={Bulletin} alt='icon-bulleting' className='bulletin'/><strong>Year 2: </strong> Enhanced Learning Partnerships.</li>
-                            <li><img src={Bulletin} alt='icon-bulleting' className='bulletin'/><strong>Year 3: </strong> Exam Preparation and Guidance.</li>
-                            <li><img src={Bulletin} alt='icon-bulleting' className='bulletin'/><strong>Year 4: </strong> Professional Certification Training.</li>
-                            <li><img src={Bulletin} alt='icon-bulleting' className='bulletin'/><strong>Year 5: </strong> Internships and Job Preparation.</li>
-                            <li><img src={Bulletin} alt='icon-bulleting' className='bulletin'/><strong>Year 6: </strong> Further Education Opportunities.</li>
-                        </ul>
+                <p className="program-header__content">Programs</p>
+                <p className="program__subtop">Designed to spark interest and provide direction, these campaigns target students, parents, and educators.</p>
+                {/* <hr className='program__line'/>  */}
+                <div className="program__main__conent">
+                    <div className="program-content1">
+                    {/* <hr /> */}
+                        <Content 
+                            icon={Icon1}
+                            title= 'Year 1'    
+                            description='Onboarding and Introduction to Finance'
+                        />
+                         <hr />
+                        <Content 
+                            icon={Icon2}
+                            title= 'Year 2'    
+                            description='Enhanced Learning Partnerships'
+                        />
+                         <hr />
+                        <Content 
+                            icon={Icon2}
+                            title= 'Year 3'    
+                            description='Exam Preparation and Guidance'
+                        />
+                         <hr />
                     </div>
-                    <div className="program__content_img">
-                        <img src={ImageOne} alt="program-image" className="program-img" />
-                        {/* <img src={ImageTwo} alt="" className="program-image2" /> */}
+
+                    <div className="program-content2">
+                    {/* <hr /> */}
+                        <Content 
+                            icon={Icon1}
+                            title= 'Year 4'    
+                            description='Professional Certification Training'
+                        />
+                         <hr />
+                        <Content 
+                            icon={Icon2}
+                            title= 'Year 5'    
+                            description=' Internships and Job Preparation'
+                        />
+                         <hr />
+                        <Content 
+                            icon={Icon2}
+                            title= 'Year 6'   
+                            description='Further Education Opportunities'
+                        />
+                         <hr />
                     </div>
+
+
                 </div>
+
             </div>
         </div>
+
         
     )
 }
 
-export default Program
+export default Programs
