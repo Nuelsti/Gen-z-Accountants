@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import { useTheme } from './themeprovider'
+// import { useTheme } from './themeprovider'
 import Hero from '../components/Hero';
 import About from '../components/AboutUs';
 import MissionVision from '../components/MissionVision';
@@ -8,9 +8,9 @@ import MissionVision from '../components/MissionVision';
 import Programs from '../components/Programs';
 import Team from '../components/OurTeam'
 const Home = () => {
-    const { isDarkMode } = useTheme();
+    // const { isDarkMode } = useTheme();
   return (
-    <div className={`main-container ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+    <div className="main-container">
         <Navbar/>
         <Hero />
         <About />
