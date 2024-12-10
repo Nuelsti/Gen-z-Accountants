@@ -7,16 +7,17 @@ function About() {
         <div className="about__main" id="About">
             <div className="about__main__content">
                 <div className="about__main__img">
-                    <div className="about__background"></div>
+                    {/* <div className="about__background"></div> */}
                     <img src={Image1} alt="" className="main__img" />
-                    <img src={Image1} alt="" className="main__img2" />
+                    {/* <img src={Image1} alt="" className="main__img2" /> */}
 
                 </div>
                 <div className="about__main_text">
                     {/* <h1 className="about__us__head" style={{fontSize: "4rem", color: '#003366'}}>About Us</h1> */}
                     <div className="about__content">
-                        {/* <p className="about__us__sub_head">Our Mission</p> */}
+                        <p className="about__us__sub_head" style={{color: '#003366'}}>Welcome to Gen-Z Accountant</p>
                         <p className="about__us__content">
+
                             <span className='about__sub__conent'>Gen-Z Accountants </span>, is a Not-for-Profit Organization dedicated 
                             to guiding young finance aspirants in Nigeria. 
                             Our mission is to address career mismatches and the scarcity of skilled finance 

@@ -1,5 +1,11 @@
 .team__main__container{
      padding: 5rem;
+     @media screen and (max-width: 1200px) {
+        padding: 3rem;      
+     }
+     @media screen and (max-width: 820px) {
+        padding: 2rem;        
+     }
      
 }
 .team__content__title{

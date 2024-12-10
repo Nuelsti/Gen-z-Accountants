@@ -14,8 +14,8 @@ const Home = () => {
         <Navbar/>
         <Hero />
         <About />
-        <MissionVision />
         <Programs />
+        <MissionVision />
         <Team />
         <div className='join-footer'>
         {/* <Footer/> */}

@@ -6,7 +6,7 @@ import { Display } from './display'
 import image1 from '../../assets/img/IMG_2318.jpg'
 import image2 from '../../assets/img/IMG_2285.jpg'
 import image3 from '../../assets/img/IMG_2256.jpg'
-import image04 from '../../assets/img/IMG_2345 (1).jpg'
+import image04 from '../../assets/img/imaee.jpg'
 // import image4 from '../../assets/img/IMG_2345 (1).jpg'
 // import { PiX } from 'react-icons/pi'
 
@@ -19,7 +19,6 @@ function MissionVision() {
             background: "#DBE5FF", 
             color: "#ffff", 
             fontWeight: '600',
-            // letterSpacing: '1px',
             backgroundImage: `url(${image04})`, 
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
@@ -30,7 +29,6 @@ function MissionVision() {
             background: "#DBE5FF", 
             color: "#ffff", 
             fontWeight: '600',
-            // letterSpacing: '1px',
             backgroundImage: `url(${image2})`, 
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
@@ -45,7 +43,6 @@ function MissionVision() {
             backgroundRepeat: 'no-repeat',
             boxShadow: "inset 0px -150px 200px 5px  rgb(1, 1, 18)",
             fontWeight: '600',
-            // letterSpacing: '1px',
         },
         {
             background: "#DBF2F1", 
@@ -84,24 +81,7 @@ function MissionVision() {
                 </div>
             </div>
 
-            {/* vision */}
-            <div className="mission__vision__main__left">
-                <h2 className='text__content-con'>Our Vision</h2>
-                <div className="mission___content">
-                    <Display 
-                    //    icon={} 
-                        style={style3}
-                        title="Empowering Future Leaders" 
-                        description="Creating a community where aspiring professionals thrive."                     />
-                    
-                    <Display                     
-                        style={style4}
-                        title="Building Inclusive Opportunities" 
-                        description="Ensuring equal opportunities for diverse groups in finance careers." 
-                    />
-                   
-                </div>
-            </div>
+        
         </div>
         
     )

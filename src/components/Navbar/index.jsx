@@ -52,17 +52,6 @@ const Navbar = () => {
                             About Us
                         </ScrollLink>
                         <ScrollLink 
-                            to="Mission" 
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}
-                            offset={-100}
-                            duration={1000} 
-                            className="link">
-                            Mission & Vision
-                        </ScrollLink>
-
-                        <ScrollLink 
                             to="Programs" 
                             activeClass="active"
                             spy={true}
@@ -70,7 +59,18 @@ const Navbar = () => {
                             offset={-100}
                             duration={1000} 
                             className="link">
-                            Programs                        
+                            Programs 
+                        </ScrollLink>
+
+                        <ScrollLink 
+                            to="Mission" 
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={1000} 
+                            className="link">
+                            Mission & Vision                       
                         </ScrollLink>
                         <ScrollLink 
                             to="Impact" 
