@@ -1,7 +1,7 @@
 // import './App.css';
-import { createBrowserRouter, RouterProvider, Navigate  } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 // import { ThemeProvider } from './routes/themeprovider';
-import Home from './routes/home';
+import Home from './Routes/home.jsx';
 // import Services from './services/index.jsx';
 
 function App() {
