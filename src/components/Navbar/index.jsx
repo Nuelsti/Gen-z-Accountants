@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import "./style.css";
 import { Link as ScrollLink} from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
-import Switch from "./Toggle/index.jsx";
-import { useTheme } from "../../routes/themeprovider.jsx";
+
 
 
 
 const Navbar = () => {
-  const { toggleTheme } = useTheme();
   const [open, setopen] = useState(false);
 
   const togglehambuger = () => {
