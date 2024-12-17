@@ -40,7 +40,7 @@ function Team() {
                 <div className= 'team__content_four'>
                     <TeamCat 
                         Image = {Image1}
-                        name = 'Miss Zipporah Pam'
+                        name = 'Miss Zipporah Pam Francis'
                     /> 
                 </div>
             </div>
