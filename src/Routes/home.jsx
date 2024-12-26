@@ -7,6 +7,9 @@ import MissionVision from '../components/MissionVision';
 // import FellowshipStructure from '../components/FellowshipStructure';
 import Programs from '../components/Programs';
 import Team from '../components/OurTeam'
+import Footer from '../components/footer';
+import Impact from '../components/Impact';
+import Getinvolved from '../components/Geninvolved';
 const Home = () => {
     // const { isDarkMode } = useTheme();
   return (
@@ -17,8 +20,10 @@ const Home = () => {
         <Programs />
         <MissionVision />
         <Team />
+        <Impact />
+        <Getinvolved />
         <div className='join-footer'>
-        {/* <Footer/> */}
+        <Footer/>
         </div>   
       
     </div>

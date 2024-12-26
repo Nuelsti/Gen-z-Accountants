@@ -116,18 +116,24 @@
     gap: 20px;
 }
 .main_btns{
-    padding: 1rem;
+    padding: 0.6rem 1rem;
     box-sizing: border-box;
     border: 1px solid #ccc;
     /* background-color: #ccc; */
     border-radius: 14px;
     color: white;
-    font-weight: 600;
+    font-weight: 400;
     cursor:pointer;
+    /* cursor: pointer; */
     @media screen and (max-width: 768px) {
         padding: 1rem;
         font-weight: 400;
         font-size: 12px;
     }
 }
+.main_btns:hover{
+    background-color: #ffff;
+    color: #0049FF;
+}
+
 

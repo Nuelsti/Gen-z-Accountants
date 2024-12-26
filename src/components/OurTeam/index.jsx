@@ -44,8 +44,7 @@ function Team() {
                     /> 
                 </div>
             </div>
-            <div className="team_cont">
-          
+            <div className="team_cont">          
                 <div className='team__content_five'>
                     <TeamCat 
                         Image = {Image5}
