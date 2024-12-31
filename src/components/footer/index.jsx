@@ -1,15 +1,26 @@
 import React from 'react'
 import './style.css'
-import { Link } from 'react-router-dom'
+import { Link as RouterLink} from 'react-router-dom'
+import Logo from '../../assets/img/GZ logo 00.png'
 
 function Footer() {
+
+    const reload = () => {
+        windows.reload();
+    };
+
     return (
         <div className="footer__main">
             <div className="footer__content">
                 <div className="footer__contact">
-                    <div className="main_logo">
-
-                    </div>
+                    <div className="navbar__header__logo">
+                              <div className="llogo">
+                                <RouterLink onClick={reload} to="/">
+                                  <img className="logo__img" src={Logo} alt="logo" />
+                                </RouterLink>
+                              </div>
+                              <p className="logo__name">Gen-z Accountants</p>
+                            </div>
                     <div className="footer__online__contact">
                         <div className="contact__icon"></div>
                         <div className="contact__info__cont">
@@ -25,7 +36,7 @@ function Footer() {
                 <hr />
                 <div className="social__info">
                     <div className="fb">
-                        <Link className="fb_link" to='/fb'><img src="" alt="" /></Link>
+                        <RouterLink className="ln_link" to=''><img src="" alt="" /></RouterLink>
 
                     </div>
                 </div>

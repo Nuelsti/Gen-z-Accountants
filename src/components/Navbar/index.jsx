@@ -1,11 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
-import Logo from '../../assets/img/GZ ACCOUNTANTS.png';
+import Logo from '../../assets/img/GZ logo 00.png';
 import './style.css';
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Check if user scrolled more than 50px
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll); // Cleanup
+  }, []);
 
   // Handle the hamburger toggle
   const toggleHamburger = () => {
@@ -22,7 +31,7 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed_Navbar container">
+    <div className={`fixed_Navbar container${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar__main__content">
         <div className="navbar__header__logo">
           <div className="llogo">
@@ -30,7 +39,7 @@ function Navbar() {
               <img className="logo__img" src={Logo} alt="logo" />
             </RouterLink>
           </div>
-          <p className="logo__name">Gen-z Accountants</p>
+          <p className="logo__name">Gen-Z Accountants</p>
         </div>
 
         {/* Navbar menu */}

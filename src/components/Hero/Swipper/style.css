@@ -1,0 +1,41 @@
+.slider-main-head{
+    /* width: 520px; */
+    padding: 10rem;
+    @media screen and (max-width: 1300px) {
+        padding: 7rem;        
+    }
+    @media screen and (max-width: 1200px) {
+        padding: 10rem 5rem;        
+    }
+    
+    @media screen and (max-width:1024px) {
+        padding: 10rem 3rem;        
+    }
+    @media screen and (max-width:768px) {
+        padding:10rem 2rem;        
+    }
+    @media screen and (max-width: 540px) {
+        padding: 10rem 1rem;        
+    }
+}
+.slider-text-content{
+    text-align: center;
+}
+.slider-text-head{
+    font-size: 42px;
+}
+.style-head{
+    color: #0049FF;
+}
+.slider-sub-text{
+    font-size: 20px;
+    font-weight: 200;
+}
+.slider-sub-btn{
+    box-sizing: border-box;
+    border: 1px solid #ffff;
+    width: fit-content;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    margin: 5px auto;
+}
