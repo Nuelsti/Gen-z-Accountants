@@ -37,14 +37,15 @@ function Team() {
                         name = 'Miss Gbaruko Onyekachi'
                     />
                 </div>
-                <div className= 'team__content_four'>
+                
+            </div>
+            <div className="team_cont">  
+            <div className= 'team__content_four'>
                     <TeamCat 
                         Image = {Image1}
                         name = 'Miss Zipporah Pam Francis'
                     /> 
-                </div>
-            </div>
-            <div className="team_cont">          
+                </div>        
                 <div className='team__content_five'>
                     <TeamCat 
                         Image = {Image5}

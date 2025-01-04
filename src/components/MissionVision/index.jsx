@@ -1,8 +1,6 @@
 import React from 'react'
 import './style.css'
 import { Display } from './display'
-// import Icon1 from '../../../src/assets/img/compassicon.svg'
-// import image1 from '../../assets/img/IMG_2256.jpg'
 import image1 from '../../assets/img/IMG_2318.jpg'
 import image2 from '../../assets/img/IMG_2285.jpg'
 import image3 from '../../assets/img/IMG_2256.jpg'

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
@@ -7,6 +7,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 function Swipper() {
+  const[isOpen, setIsOpen]= useState(false)
+
+  const handleToggle =(e)=>{
+    setIsOpen(!isOpen)
+  };
+
   const heroInfo = [
     {
       id: 1,
@@ -50,7 +56,7 @@ function Swipper() {
                 {item.title} <span className="style-head">{item.styletitle}</span>
               </p>
               <p className="slider-sub-text">{item.description}</p>
-              <div className="slider-sub-btn">
+              <div className="slider-sub-btn" onClick={handleToggle}>
                 <p className="slider-button">{item.button}</p>
               </div>
             </div>

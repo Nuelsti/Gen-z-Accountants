@@ -1,5 +1,6 @@
 .footer__main{
-    background: linear-gradient(to right, #ffffff, #0048ff, #0048ff);
+    /* background: linear-gradient(to right, #ffffff, #0048ff, #0048ff); */
+    background-color: #0048ff;
     padding: 8rem 2rem;
     color: white;
     @media screen and (max-width: 1200px) {
@@ -39,4 +40,8 @@
  .contact__info__cont{
     letter-spacing: 1px;
     font-size: 18px;
+ }
+ .navbar__header__logo{
+    /* background-color: white; */
+    /* width: 100%; */
  }
