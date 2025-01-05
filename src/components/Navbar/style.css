@@ -66,12 +66,20 @@
   /* background-color: #ffffff; */
 }
 .logo__img{
-  width: 27px;
-  height: 25px;
+  width: 37px;
+  height: 35px;
+  @media screen and (max-width:960px) {
+    width: 27px;
+    height: 25px;    
+  }
 }
 .logo__name{
   color: #0048ff;
-  font-size: 16px;
+  font-size: 20px;
+  @media screen and (max-width:960px) {
+    font-size: 16px;
+    
+  }
   @media screen and (max-width: 540px) {
     font-size: 14px;    
   }
@@ -94,9 +102,9 @@
 }
 .Navbar_link ul{
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
   cursor: pointer;
   /* color: black; */

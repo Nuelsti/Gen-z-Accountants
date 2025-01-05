@@ -24,6 +24,11 @@ body{
 ul,li{
   list-style: none;
 }
+a,Link{
+  text-decoration: none;
+  font-family: "Outfit", serif;
+  cursor:pointer;
+}
 button{
   box-sizing: border-box;
   border: 1px solid #0048ff;

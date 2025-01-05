@@ -1,5 +1,6 @@
 .slider-main-head{
     /* width: 520px; */
+    /* width:100%; */
     padding: 10rem;
     @media screen and (max-width: 1300px) {
         padding: 7rem;        
