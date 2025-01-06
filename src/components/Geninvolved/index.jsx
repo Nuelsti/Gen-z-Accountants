@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import './style.css'
 import Image1 from '../../assets/img/image1 (2).jpg'
 import Image2 from '../../assets/img/image2.jpg'
+import Image3 from '../../assets/img/newwork1.jpg'
 // import SponsorPopUp from './sponsorpopup';
 
 
@@ -100,7 +101,7 @@ function Getinvolved() {
                             <button className="call__to__action volu">Become a Mentor</button>
                         </div> 
                         <div className="getinvolved-img">                            
-                            <img className="image_get" src ={Image2} alt='img' /> 
+                            <img className="image_get" src ={Image3} alt='img' /> 
                         </div>
                     </div>
                     <div className="getinvolved__one-content fourt">

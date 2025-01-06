@@ -7,8 +7,9 @@ import {Link} from 'react-router-dom'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Img1 from '../../assets/img/ima2.jpg'
-import Img2 from '../../assets/img/back2.jpg'
-import Img3 from '../../assets/img/baks (2).jpg'
+import Img2 from '../../assets/img/kkkiji.jpg'
+import Img3 from '../../assets/img/newback.jpg'
+import Img4 from '../../assets/img/ggggg.jpg'
 
 function Hero() {
     const styles = [
@@ -22,16 +23,19 @@ function Hero() {
         {
           backgroundImage:`url(${Img3})`,
         },
+        {
+          backgroundImage:`url(${Img4})`,
+        },
       ]
     
       const heroInfo = [
         {
           id: 1,
-          title: 'Become a ',
-          styletitle: 'Partner',
-          description: 'Collaborate on training programs to foster a sustainable workforce',
+          title: 'Become a Corporate Partnership',
+          styletitle:  '(Finance Team Building)',
+          description: 'To help provide the allowance to the interns assigned from Gen-Z Accounts',
           button: 'Join Here',
-          link: '',
+          link: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__oHgFFhURENNWEg5SEdUTkVBUDdZV09RVjI0VFNZMi4u',
           style : styles[0],
         },
         {
@@ -39,18 +43,27 @@ function Hero() {
           title: 'Become A ',
           styletitle: 'Volunteer',
           description: 'To build skills, mentorship connections, and career opportunities.',
-          button: 'Become a Fellow',
+          button: 'Become a Volunteer',
           link: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__oHgFFhUQUhGMkZORzFYMEQ4SDNGUUlMUVRQTUxBUi4u',
           style : styles[1],
         },
         {
           id: 3,
           title: 'Become a ',
-          styletitle: 'Corporate Partner',
-          description: 'To provide scholarships and impactful internship opportunities.',
-          button: 'Donate',
-          link:'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__oHgFFhURENNWEg5SEdUTkVBUDdZV09RVjI0VFNZMi4u',
+          styletitle: 'Fellow',
+          description: 'Join our 6-year fellowship to gain mentorship, professional skills, and career opportunities.',
+          button: 'Join Us',
+          link: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__oHgFFhUNkcwSTNJV1FGUDdNMUNRU1M4SFlIVVpNUS4u',
           style : styles[2],
+        },
+        {
+          id: 4,
+          title: 'Become a Corporate Partner ',
+          styletitle: '(C.S.R Projects)',
+          description: 'To provide scholarships and impactful internship opportunities.',
+          button: 'Partner Here',
+          link:'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__oHgFFhUREZTREk5U0RON0dETzEzVFkyNVVVTko3Vy4u',
+          style : styles[3],
         },
       ];
 

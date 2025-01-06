@@ -70,3 +70,9 @@
 .about__sub__conent{
     font-weight: 700;
 }
+.about__content{
+    font-size: 16px;
+    @media screen and (max-width:540px) {
+        font-size: 14px;        
+    }
+}

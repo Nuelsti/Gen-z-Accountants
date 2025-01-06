@@ -1,37 +1,17 @@
-import React, {useState}from 'react'
+import React, {useState, useEffect}from 'react'
 import './style.css'
 import Content from './content'
 import Icon1 from '../../assets/img/handshake.svg'
 import Icon2 from '../../assets/img/compassicon.svg'
-// 
+// aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Programs() {
-
-    // const [activeIndex, setActiveIndex] = useState(null);
-
-    // const toggleLearnMore = (index) => {
-    //     setActiveIndex(activeIndex === index ? null : index);
-    // };
-
-    // const moreContent = [
-    //     { 
-    //         head: "What is VelmozaEats?", 
-    //         answer: " answer" 
-    //     },
-    //     { 
-    //         head: "Is Velmoza available in every state?", 
-    //         answer: " " 
-    //     },
-    //     { 
-    //         head: "How much can I make monthly?", 
-    //         answer: " " 
-    //     },
-    //     { 
-    //         head: "What do I need to get started?", 
-    //         answer: " " 
-    //     },
-
-    // ];
-        
+       useEffect(() => {
+            AOS.init();
+            AOS.refresh();
+        },[]);
+    
     return (
         <div className="program-container" id='Programs'>
             <div className="program__header">
@@ -39,7 +19,11 @@ function Programs() {
                 <p className="program__subtop">Designed to spark interest and provide direction, these campaigns target students, parents, and educators.</p>
                 {/* <hr className='program__line'/>  */}
                 <div className="program__main__conent">
-                    <div className="program-content1">
+                    <div 
+                    className="program-content1"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    >
                     {/* <hr /> */}
                         <Content 
                             icon={Icon1}
@@ -61,7 +45,11 @@ function Programs() {
                          <hr />
                     </div>
 
-                    <div className="program-content2">
+                    <div 
+                    className="program-content2"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-center"
+                    >
                     {/* <hr /> */}
                         <Content 
                             icon={Icon1}
