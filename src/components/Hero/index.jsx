@@ -40,7 +40,7 @@ function Hero() {
         },
         {
           id: 2,
-          title: 'Become A ',
+          title: 'Join as A ',
           styletitle: 'Volunteer',
           description: 'To build skills, mentorship connections, and career opportunities.',
           button: 'Become a Volunteer',
@@ -86,7 +86,7 @@ function Hero() {
                                 <div className="header__main-text">
                                     <div className="slider-text-content">
                                         <p className="slider-text-head">
-                                            {item.title} <span className="style-head">{item.styletitle}</span>
+                                            {item.title} <p className="style-head">{item.styletitle}</p>
                                         </p>
                                         <p className="slider-sub-text">{item.description}</p>
                                         <div className="slider-sub-btn" >

@@ -1,7 +1,7 @@
 .footer__main{
     /* background: linear-gradient(to right, #ffffff, #0048ff, #0048ff); */
-    background-color: #0048ff;
-    padding: 8rem 2rem;
+    background-color: #010e2c;
+    padding: 8rem 5rem;
     color: white;
     @media screen and (max-width: 1200px) {
         padding: 8rem;        
@@ -21,7 +21,7 @@
 }
 .footer__contact{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 50px;
     align-items: center;
     margin-bottom: 50px;

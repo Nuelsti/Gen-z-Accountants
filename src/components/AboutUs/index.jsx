@@ -21,7 +21,7 @@ function About() {
                 data-aos-duration="1500"
                 >
                     {/* <div className="about__background"></div> */}
-                    <img src={Image1} alt="" className="main__img" />
+                    <img src={Image1} alt="" className="about__main__img" />
                     {/* <img src={Image1} alt="" className="main__img2" /> */}
 
                 </div>

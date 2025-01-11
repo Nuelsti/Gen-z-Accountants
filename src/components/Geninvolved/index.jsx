@@ -3,11 +3,32 @@ import './style.css'
 import Image1 from '../../assets/img/image1 (2).jpg'
 import Image2 from '../../assets/img/image2.jpg'
 import Image3 from '../../assets/img/newwork1.jpg'
+import ArrowDown from '../../assets/img/arrowdown.svg'
+import { Link } from 'react-router-dom'
 // import SponsorPopUp from './sponsorpopup';
 
 
 function Getinvolved() {
     const[isOpen, setIsOpen] = useState(false);
+    const[isActive, setIsActive] = useState(null);
+
+    const toggleAnser = (index) => {
+        setIsActive(isActive === index ? null : index);
+    };
+    const partnershipType = [
+        {
+            type : 'Finance Team Building',
+            content : 'Build your Corporate Finance Team',
+            link : 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__oHgFFhUREZTREk5U0RON0dETzEzVFkyNVVVTko3Vy4u'
+        },
+        {
+            type: 'C.S.R.',
+            content: 'Outsource your Corporate Social Responsibility (C.S.R) Projects.',
+            link: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__oHgFFhUREZTREk5U0RON0dETzEzVFkyNVVVTko3Vy4u'
+
+        }
+    ]
+
     // const[sponsorName, setSponsorName] = useState('')
 
     // const handleInputChange = (e) =>{
@@ -108,13 +129,28 @@ function Getinvolved() {
                         <div className="getinvolved-img">                            
                             <img className="image_get" src ={Image2} alt='img' /> 
                         </div>
-                        <div className="getinvolved_text">
-                            <h2 className="getinvolved_name">Corporate Partnerships</h2>
-                            <p className="getinvolved__sub-title">Join Us in Building Careers:</p>
-                            <p className="getinvolved__para">Recruit from our pool of skilled fellows trained in professional ethics and finance.                            </p>
-                            <p className="getinvolved_sec_para">Collaborate on training programs to foster a sustainable workforce.                           </p>
-                            <button className="call__to__action corp">Partner with Us</button>
-                        </div> 
+                        <div className="get-involved-main">
+                            <h2 className="getinvolved_name">For Partnerships</h2>
+                        {partnershipType.map((partner, index) =>(                           
+                            <div className="getinvolved_text last" key={index}>
+                                <button className='main-partner-head' onClick={() => {toggleAnser(index)}}>
+                                    {partner.type}
+                                    <img src={ArrowDown} alt=""  className={isActive === index ? "rotate" : ""} />                                    
+                                </button>
+                                <div className={`main-partner-complete ${isActive === index ? "show" : ""}`}>            
+                                    {partner.content}
+                                    <div className='partner__call__to_action-btn'>
+                                        <Link 
+                                            to= {partner.link}
+                                            className= 'call__to__action partner'
+                                        >
+                                            Partner Here
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div> 
+                        ))}
+                        </div>
                     </div>                    
             </div>
             <div className="get-involved__conclude">

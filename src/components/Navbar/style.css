@@ -1,7 +1,7 @@
 .fixed_Navbar{
-  padding: 1rem 2rem;
-  /* background-color: #0048ff; */
-  background: linear-gradient(to right, #ffffff, #0048ff, #0048ff);
+  padding:2rem;
+  background-color: #010e2c;
+  /* background: linear-gradient(to right, #ffffff, #0048ff, #0048ff); */
   backdrop-filter: blur(10px);
   top: 0;
   width: 100%;

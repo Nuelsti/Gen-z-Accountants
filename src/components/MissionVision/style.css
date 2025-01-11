@@ -24,7 +24,7 @@
 .text__content-con{
     font-size: 4rem;
     font-weight: 100;
-    color: #0049FF;
+    color: #010e2c;
     @media screen and (max-width: 1024px) {
         font-size: 3rem;      
         

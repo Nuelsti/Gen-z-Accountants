@@ -11,7 +11,7 @@
 
 }
 .header__main__left{
-    padding: 15rem;
+    padding: 10rem;
     @media screen and (max-width: 1024px) {
         margin-left: 0;
         padding: 15rem 5rem 10rem 5rem;        
@@ -19,8 +19,6 @@
     @media screen and (max-width: 820px) {
         padding: 15rem 1rem 10rem 1rem;        
     }
-   
-
 }
 .header__main::before{
     content: ""; /* Create an empty pseudo-element */  
@@ -66,8 +64,8 @@
 }
 .call__to__action__btn{
     box-sizing: border-box;
-    border: 1px solid #0049FF;
-    background-color: #0049FF;
+    border: 1px solid #010e2c;
+    background-color: #010e2c;
     padding: 0.8rem 3rem;
     color: white;
     font-size: 18px;
@@ -91,7 +89,7 @@
     width: 100%;
     /* height: 100px; */
     padding: 2rem 10rem;
-    background-color: #0049FF;
+    background-color: #010e2c;
     z-index: 10000;
     display: flex;
     justify-content: space-between;
@@ -133,7 +131,7 @@
 }
 .main_btns:hover{
     background-color: #ffff;
-    color: #0049FF;
+    color: #010e2c;
 }
 
 .slider-text-content{
@@ -143,7 +141,7 @@
     font-size: 42px;
 }
 .style-head{
-    color: #0049FF;
+    color: #ffff;
 }
 .slider-sub-text{
     font-size: 20px;

@@ -1,0 +1,16 @@
+.contact__us__main{
+    padding:5rem;
+}
+.contact__us__main__title{
+    text-align: center;
+
+}
+.head__contact__us{
+    font-size: 4rem;
+    font-weight: 100;
+    color: #010e2c;
+}
+.sub__head__contact__us{
+    font-size: 1.5rem;
+    color: #000;
+}
