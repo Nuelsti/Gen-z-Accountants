@@ -13,9 +13,9 @@ function Programs() {
         },[]);
     
     return (
-        <div className="program-container" id='Programs'>
+        <div className="program-container container" id='Programs'>
             <div className="program__header">
-                <p className="program-header__content">Programs</p>
+                <p className="program-header__content">Finance Career Road Map</p>
                 <p className="program__subtop">Designed to spark interest and provide direction, these campaigns target students, parents, and educators.</p>
                 {/* <hr className='program__line'/>  */}
                 <div className="program__main__conent">

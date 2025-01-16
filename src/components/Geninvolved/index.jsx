@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './style.css'
 import Image1 from '../../assets/img/image1 (2).jpg'
 import Image2 from '../../assets/img/image2.jpg'
@@ -6,9 +6,16 @@ import Image3 from '../../assets/img/newwork1.jpg'
 import ArrowDown from '../../assets/img/arrowdown.svg'
 import { Link } from 'react-router-dom'
 // import SponsorPopUp from './sponsorpopup';
+// aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 function Getinvolved() {
+      useEffect(() => {
+                AOS.init();
+                AOS.refresh();
+            },[]);
     const[isOpen, setIsOpen] = useState(false);
     const[isActive, setIsActive] = useState(null);
 
@@ -29,18 +36,13 @@ function Getinvolved() {
         }
     ]
 
-    // const[sponsorName, setSponsorName] = useState('')
-
-    // const handleInputChange = (e) =>{
-    //     setSponsorName(e.target.value)
-    // }
 
     const togglePopUp = ()=>{
         setIsOpen(!isOpen);
     };
 
     return (
-        <div className="getinvolved__main" id="Get">
+        <div className="getinvolved__main container" id="Get">
             <div className="get__involved_title">
                 <p className='getinvolved__title'>Get Involved</p>
                 <p className="getinvolved__subtitle">Make a Difference Today</p>
@@ -51,24 +53,45 @@ function Getinvolved() {
             </div>
             <div className="getinvolved__content">
                     <div className="getinvolved__one-content first">
-                        <div className="getinvolved_text">
+                        <div 
+                            className="getinvolved_text"
+                            data-aos="fade-right"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="2500"
+                        >
                             <h2 className="getinvolved_name">For Student</h2>
                             <p className="getinvolved__sub-title">Start Your Journey:</p>
                             <p className="getinvolved__para">Join our 6-year fellowship to gain mentorship, professional skills, and career opportunities.</p>
                             <p className="getinvolved_sec_para">Access exclusive workshops, internships, and guidance from industry leaders.</p>
                             <button className="call__to__action stud">Apply Now</button>
                         </div>
-                        <div className="getinvolved-img">
+                        <div 
+                            className="getinvolved-img"
+                            data-aos="fade-right"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="2500"
+                        >
                             {/* insert an image1 */}
                             <img className="image_get" src ={Image1} alt='img' />
                         </div>
                     </div>
                     <div className="getinvolved__one-content third">
-                    <div className="getinvolved-img">
+                        <div 
+                            className="getinvolved-img"
+                            data-aos="fade-right"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="2500"
+                        
+                        >
                             {/* insert an image1 */}
                             <img className="image_get" src ={Image2} alt='img' />
                         </div>
-                        <div className="getinvolved_text">
+                        <div 
+                            className="getinvolved_text"
+                            data-aos="fade-right"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="2500"
+                        >
                             <h2 className="getinvolved_name"> For Sponsors and Donors</h2>
                             <p className="getinvolved__sub-title">Empower Young Minds:</p>
                             <p className="getinvolved__para">Fund impactful initiatives like inter-school campaigns and annual conferences.</p>
@@ -114,22 +137,42 @@ function Getinvolved() {
                         </div>
                     </div>
                     <div className="getinvolved__one-content fourt">
-                        <div className="getinvolved_text">
+                        <div 
+                            className="getinvolved_text"
+                            data-aos="fade-right"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="2500"
+                        >
                             <h2 className="getinvolved_name">For Volunteers</h2>
                             <p className="getinvolved__sub-title">Share Your Expertise:</p>
                             <p className="getinvolved__para">Mentor aspiring accountants and share your knowledge.                            </p>
                             <p className="getinvolved_sec_para">Host workshops or contribute to skill-building programs.                           </p>
                             <button className="call__to__action volu">Become a Mentor</button>
                         </div> 
-                        <div className="getinvolved-img">                            
+                        <div 
+                            className="getinvolved-img"
+                            data-aos="fade-right"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="2500"
+                        >                            
                             <img className="image_get" src ={Image3} alt='img' /> 
                         </div>
                     </div>
                     <div className="getinvolved__one-content fourt">
-                        <div className="getinvolved-img">                            
+                        <div 
+                            className="getinvolved-img"
+                            data-aos="fade-right"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="2500"
+                        >                            
                             <img className="image_get" src ={Image2} alt='img' /> 
                         </div>
-                        <div className="get-involved-main">
+                        <div 
+                            className="get-involved-main"
+                            data-aos="fade-right"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="2500"
+                        >
                             <h2 className="getinvolved_name">For Partnerships</h2>
                         {partnershipType.map((partner, index) =>(                           
                             <div className="getinvolved_text last" key={index}>

@@ -2,17 +2,14 @@ import React, {useEffect} from 'react'
 import './style.css'
 import { Display } from './display'
 import image1 from '../../assets/img/IMG_2318.jpg'
-import image2 from '../../assets/img/IMG_2285.jpg'
+import image2 from '../../assets/img/VISION.jpg'
 import image3 from '../../assets/img/IMG_2256.jpg'
-import image04 from '../../assets/img/imaee.jpg'
+import image04 from '../../assets/img/mission.jpg'
 import icon001 from '../../assets/img/closeup-shot-waving-flag-nigeria-with-interesting-textures.jpg'
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import image4 from '../../assets/img/IMG_2345 (1).jpg'
-// import { PiX } from 'react-icons/pi'
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 function MissionVision() {
@@ -68,28 +65,32 @@ function MissionVision() {
     const style4 = stylesArray[3];
 
     return (
-        <div className="mission__vision__main" id='Mission'>
+        <div className="mission__vision__main">
             <div className="mission__vision__main__left">
-                <h2 className='text__content-con'>Our Mission</h2>
                 <div 
                 className="mission___content"
                 data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
                 >
-                    <Display 
-                        Icon={icon001}
-                        style={style1}
-                        title="Guiding Finance Aspirants"
-                        description="Provide career guidance and skill development opportunities for young finance professionals in Nigeria."
-                    />
-                    <Display 
-                        // iconImg={}
-                        style={style2}
-                        title="Reducing Unemployment"
-                        description="Equip aspiring accountants with ethical training and job placement support to alleviate unemployment."
-                    />
-
+                    <div className="mission__content-one">
+                    <h2 className='text__content-con'>Our Mission</h2>
+                        <Display 
+                            Icon={icon001}
+                            style={style1}
+                            title="Guiding Finance Aspirants"
+                            description="To guide and support young aspiring finance professionals in Nigeria through skill development, ethical training, and job placement opportunities."
+                        />
+                    </div>
+                    <div className="mission__content-two" style={{marginTop:'20px'}}>
+                    <h2 className='text__content-con'>Our Vision</h2>
+                        <Display 
+                            // iconImg={}
+                            style={style2}
+                            title="Gen-Z Finance Club"
+                            description="To create a future where every Network of Professional finance aspirants has the support and resources needed to build a successful career."
+                        />
+                    </div>
                 </div>
             </div>
 

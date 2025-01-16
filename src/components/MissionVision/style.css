@@ -8,25 +8,14 @@
     text-align: center;
 }
 .mission___content{
-    display: flex;
-    /* flex-wrap: nowrap; */
-    justify-content: center;
-    gap: 50px;
-    width: 100%;
-    margin-top: 20px;
-    @media screen and (max-width:1200px) {
-        gap: 40px;        
-    }
-    @media screen and (max-width: 540px) {
-        flex-direction: column;        
-    }
+
 }
 .text__content-con{
     font-size: 4rem;
     font-weight: 100;
     color: #010e2c;
+    /* text-align: center; */
     @media screen and (max-width: 1024px) {
-        font-size: 3rem;      
-        
+        font-size: 3rem;    
     }
 }

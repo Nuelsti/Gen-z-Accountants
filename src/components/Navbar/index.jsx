@@ -31,7 +31,7 @@ function Navbar() {
   };
 
   return (
-    <div className={`fixed_Navbar container${isScrolled ? "scrolled" : ""}`}>
+    <div className={`fixed_Navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar__main__content">
         <div className="navbar__header__logo">
           <div className="llogo">
@@ -86,20 +86,6 @@ function Navbar() {
               }}
             >
               Programs
-            </ScrollLink>
-            <ScrollLink
-              to="Mission"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={1000}
-              className="link"
-              onClick={() => {
-                closeNavbar(); // Close the menu on click
-              }}
-            >
-              Mission & Vision
             </ScrollLink>
             <ScrollLink
               to="Impact"

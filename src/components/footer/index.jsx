@@ -10,7 +10,7 @@ function Footer() {
     };
 
     return (
-        <div className="footer__main">
+        <div className="footer__main container">
             <div className="footer__content">
                 <div className="footer__contact">
                     <div className="navbar__header__logo">

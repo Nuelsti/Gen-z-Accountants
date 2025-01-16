@@ -1,7 +1,7 @@
 .program-container{
-    background-color: #010e2c;
+    background-color: #0048ff;
     color: #ffff;
-    padding: 6rem 5rem ;
+    /* padding: 6rem 5rem ;
     @media screen and (max-width: 1200px) {
         padding: 5rem 3rem;       
     }
@@ -12,7 +12,7 @@
     @media screen and (max-width:540px) {
         padding: 5rem 1rem;
         
-    }
+    } */
 }
 .program__subtop{
     width: 50%;

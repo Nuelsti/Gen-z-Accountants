@@ -11,7 +11,7 @@ import Image6 from '../../assets/img/lbessin.png'
 
 function Team() {
     return(
-        <div className='team__main__container'>
+        <div className='team__main__container container'>
             <div className='team__content__title'>
                 <p className='main__title'>Our Team</p>
                 <hr className='line'/>

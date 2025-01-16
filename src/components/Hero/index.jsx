@@ -6,10 +6,10 @@ import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 import {Link} from 'react-router-dom'
 import 'swiper/css';
 import 'swiper/css/pagination';
-import Img1 from '../../assets/img/ima2.jpg'
-import Img2 from '../../assets/img/kkkiji.jpg'
-import Img3 from '../../assets/img/newback.jpg'
-import Img4 from '../../assets/img/ggggg.jpg'
+import Img1 from '../../assets/img/main-back1.jpg'
+import Img2 from '../../assets/img/main-back2.jpg'
+import Img3 from '../../assets/img/main-back3.jpg'
+import Img4 from '../../assets/img/main-back4.jpg'
 
 function Hero() {
     const styles = [
@@ -80,7 +80,7 @@ function Hero() {
         >
             {heroInfo.map((item) => (
                  <SwiperSlide key={item.id}>
-                    <div className="header__main" id='Hero' style={item.style}>
+                    <div className="header__main container" id='Hero' style={item.style}>
                         <div className="header__main__left">
                             <div className="header__main__display">
                                 <div className="header__main-text">

@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 // import { useTheme } from './themeprovider'
 import Hero from '../components/Hero';
 import About from '../components/AboutUs';
-import MissionVision from '../components/MissionVision';
+// import MissionVision from '../components/MissionVision';
 // import FellowshipStructure from '../components/FellowshipStructure';
 import Programs from '../components/Programs';
 import Team from '../components/OurTeam'
@@ -19,11 +19,11 @@ const Home = () => {
         <Hero />
         <About />
         <Programs />
-        <MissionVision />
-        <Team />
+        {/* <MissionVision /> */}        
         <Impact />
         <Getinvolved />
-        <ContactUs />
+        <Team />
+        <ContactUs />        
         <div className='join-footer'>
         <Footer/>
         </div>   

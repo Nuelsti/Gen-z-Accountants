@@ -1,26 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './style.css'
 import Info from './info';
+// aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Impact() {
-    // const impactInformation = [
-    //     {
+       useEffect(() => {
+            AOS.init();
+            AOS.refresh();
+        },[]);
 
-            
-    //         title: 'states in Nigeria',
-    //     },
-    //     {
-
-    //         number: '20+',
-    //         title: 'schools',
-
-    //     },
-    //     {
-    
-    //         number: '1000+',
-    //         title: 'Finance students'
-    //     }
-    // ];
     return (
         <div className="impact__main" id='Impact'>
             <div className="impact__container">
@@ -37,22 +27,54 @@ function Impact() {
                             </div>
                         </div>
                     <div className="impact__sub_content">
-                        <div className="line one"></div>
-                        <div className="line two"></div>
-                        <div className="line three"></div>
-                        <div className="impact__sub_content1">
+                        <div 
+                            className="line one"
+                            data-aos="fade-right"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="2500"
+                         >
+                         </div>
+
+                        <div 
+                            className="line two"
+                            data-aos="fade-right"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="2500">
+                        </div>
+                        <div 
+                            className="line three"
+                            data-aos="fade-right"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="2500">
+                        </div>
+                        <div 
+                            className="impact__sub_content1"
+                            data-aos="fade-right"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="2500"
+                        >
                             <Info
                                 number='3'
                                 title='states in Nigeria'
                             />
                         </div>
-                        <div className="impact__sub_content2">
+                        <div 
+                            className="impact__sub_content2"
+                            data-aos="fade-right"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="2500"
+                        >
                             <Info
                                 number='20+'
                                 title='schools'
                             />
                         </div>
-                        <div className="impact__sub_content3">
+                        <div 
+                            className="impact__sub_content3"
+                            data-aos="fade-right"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="2500"
+                        >
                             <Info
                                 number='1000+'
                                 title='Finance students'
