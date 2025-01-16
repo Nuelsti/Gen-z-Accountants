@@ -12,12 +12,12 @@ function ContactUs() {
         {
             icon: MdEmail,
             title: 'Email Us',
-            description: 'emmanuelvictor1305@gmail.com',
+            description: 'genzacct@outlook.com',
         },
         {
             icon: AiFillPhone,
             title: 'Call Us',
-            description: 'phone: +234 '
+            description: 'phone: +234 902 800 0271 '
 
         },
     ]
