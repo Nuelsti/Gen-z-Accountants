@@ -57,10 +57,10 @@ function ContactUs() {
                                 <Link to='' target='_blank' rel="noopener noreferrer">
                                     <FaFacebook  size={30} color='#0048ff'/>                                
                                 </Link>
-                                <Link to='' target='_blank' rel="noopener noreferrer">
+                                <Link to='https://www.instagram.com/genzaccountants/profilecard/?igsh=cXF4OGh5MWk0bGZ5' target='_blank' rel="noopener noreferrer">
                                     <FaInstagram  size={30} color='#0048ff'/>                                
                                 </Link>
-                                <Link to='' target='_blank' rel="noopener noreferrer">
+                                <Link to='https://www.linkedin.com/company/gen-z-accountants' target='_blank' rel="noopener noreferrer">
                                     <FaLinkedin  size={30} color='#0048ff'/>                                
                                 </Link>
                             </div>
