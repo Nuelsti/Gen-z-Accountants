@@ -2,6 +2,7 @@ import React from 'react'
 import './style.css'
 import { Link as RouterLink} from 'react-router-dom'
 import Logo from '../../assets/img/GZ logo 00.png'
+import { Link } from 'react-router-dom'
 
 function Footer() {
 
@@ -21,16 +22,16 @@ function Footer() {
                               </div>
                               <p className="logo__name">Gen-z Accountants</p>
                             </div>
-                    <div className="footer__online__contact">
+                    {/* <div className="footer__online__contact">
                         <div className="contact__icon"></div>
                         <div className="contact__info__cont">
-                            <p className="phone_number">+234 810 738 928</p>
-                            <p className="mail">gen-x@gmail.com</p>
+                            <p className="phone_number">+234 902 800 0271</p>
+                            <p className="mail">genzacct@outlook.com</p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="footer__btns">
-                        <span className="btn1 main_btns">Donate Now</span>
-                        <span className="btn2 main_btns">Become A member</span>
+                        <Link to= 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__oHgFFhUQUhGMkZORzFYMEQ4SDNGUUlMUVRQTUxBUi4u'className="btn1 main_btns">Become a Volunteer</Link>
+                        <Link to= 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__oHgFFhUNkcwSTNJV1FGUDdNMUNRU1M4SFlIVVpNUS4u'className="btn2 main_btns">Become a member</Link>
                     </div>
                 </div>
                 <hr />
