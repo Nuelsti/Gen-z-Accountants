@@ -7,6 +7,7 @@ import About from '../components/AboutUs';
 // import FellowshipStructure from '../components/FellowshipStructure';
 import Programs from '../components/Programs';
 import Team from '../components/OurTeam'
+// import Certificate from '../components/Certificate';
 import Footer from '../components/footer';
 import Impact from '../components/Impact';
 import Getinvolved from '../components/Geninvolved';
@@ -22,8 +23,9 @@ const Home = () => {
         {/* <MissionVision /> */}        
         <Impact />
         <Getinvolved />
-        <Team />
-        <ContactUs />        
+        {/* <Team /> */}
+        <ContactUs />  
+        {/* <Certificate /> */}
         <div className='join-footer'>
         <Footer/>
         </div>   

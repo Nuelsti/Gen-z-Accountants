@@ -1,14 +1,11 @@
 .mission__vision__main{
-    margin-top: 10px;
-    padding: 1rem;
+    /* margin-top: 10px; */
+    padding: 0rem 1rem;
 }
 .mission__vision__main__left{
-    margin-top: 40px;
+    /* margin-top: 40px; */
     align-items: center;
     text-align: center;
-}
-.mission___content{
-
 }
 .text__content-con{
     font-size: 4rem;
